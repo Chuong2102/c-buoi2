@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Buoi2
 {
-    class HinhChuNhat : TinhToan
+    class HinhChuNhat : ITinhToan
     {
         double dai;
         double rong;
@@ -22,12 +22,12 @@ namespace Buoi2
             this.rong = rong;
         }
 
-        public override double ChuVi()
+        public double ChuVi()
         {
             return (dai + rong) * 2;
         }
 
-        public override double DienTich()
+        public double DienTich()
         {
             return dai * rong;
         }

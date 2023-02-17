@@ -8,5 +8,8 @@ namespace Buoi2
 {
     interface ITinhToan
     {
+        double ChuVi();
+
+        double DienTich();
     }
 }
